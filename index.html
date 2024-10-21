@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Integrador JavaScript</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  </head>
+  <body>
+    <!-- HEADER -->
+      <header>
+        <div class="container_principHeader">
+          <div class="container_contentHeader">
+            <div class="headerBuscar">
+            <input id="inputHeader" class="inputHeader" placeholder="Ingrese un elemento a buscar" type="text" />
+            <button id="buttonBuscar" class="buttonBuscar">Buscar   
+              <span class="material-symbols-outlined">
+              search
+              </span></button>
+            </div>
+         <div>
+          <button id="buttonAgregar" class="buttonAgregar">Agregar Elemento
+            <span class="material-symbols-outlined">
+              add
+            </span>
+          </button>
+         </div>       
+       </div>       
+      </div>  
+      </header>
+<!-- MAIN -->
+      <main>
+        <div class="cointainer_view">
+          <aside class="listAside">
+            <h2>Categorias 
+              <span class="material-symbols-outlined">
+              sort
+              </span>
+           </h2>
+            <ul id="listFilter" />
+          </aside>
+          <div class="store" id="cointainerStore">
+
+          </div>
+        </div>
+<!-- POPUP -->
+        <div class="popUpContainerPrincip" id="modalPopUP">
+          <div class="popUpContainer">
+            <div class="containerTitlePopUp">
+              <h1>
+                Agregar o modificar un producto
+              </h1>
+           </div>
+           <div class="containerInputsPopUp">
+            <input placeholder="Ingrese un nombre" id="name" type="text">
+            <input placeholder="Ingrese una imagen(URL)" id="img" type="text">
+            <input placeholder="Precio" id="precio" type="number">
+            <select id="categoria" required>
+              <option>Seleccione una categoria</option>
+              <option>Hamburguesas</option>
+              <option>Papas</option>
+              <option>Gaseosas</option>
+            </select>
+
+          </div>
+          <div class="containerButtonsPopUp">
+            <button class="buttonPopUP cancel" id="cancelButton">Cancelar</button>
+            <button class="buttonPopUP accept" id="acceptButton">Aceptar</button>
+            <button class="buttonPopUP delete" id="deleteButton">Eliminar</button>
+          </div>
+        </div>
+       </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
